@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body">
+    <div class="container user-form">
+        <h2>Nhập thông tin người dùng</h2>
+        <form">
+            <label for="username">User name:</label><br>
+            <input type="text" class="name" id="username" name="username" value="" style = "width:600px"><br>
+            <label for="gender">Gender:</label><br>
+            <input type="text" class="gender" id="gender" name="gender" value="" style = "width:600px"><br>
+            <label for="birthdate">Birthdate:</label><br>
+            <input type="text" class="birthdate" id="birthdate" name="birthdate" value="" style = "width:600px"><br><br>
+            <input type="submit" id="submit" value="Thêm" onclick="onClickCreateUser();">
+        </form> 
+    </div>
+    <div class="container bg1">
+        <h2>Thông tin người dùng</h2>
+            <table class="table table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Gender</th>
+                        <th>Birthdate</th>
+                        <th width="60px">Edit</th>
+                        <th width="60px">Delete</th>
+                    </tr>
+                </thead>
+                <tbody  id="users-list">
+                   <!-- <tr>
+                       <td>Phạm Quang Duy</td>
+                       <td>Nam</td>
+                       <td>13/02/1998</td>
+                       <td></td>
+                       <td></td>
+                   </tr> -->
+                   
+                   
+                </tbody>
+            </table>     
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="asset/js/custom.js"></script>
+</body>
+</html>
